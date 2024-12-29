@@ -13,8 +13,11 @@ The project, however, did not reach the stage where the OS could load other prog
 
 ## Try It Yourself  
 The repository includes binaries and disk images, so you can test it directly.  
+- bin/nuleo.bin is the OS binary file.
+- disk/DISCOM.IMA is a raw floppy disk image
+- disk/CDARNQ.ISO is a CD-ROM image I created (I don’t know how I made it, but it works)
 
-I created a VirtualBox VM using the `disk/CDARNQ.ISO` image. While it runs, it does not capture keystrokes. The `disk/DISCOM.IMA` file is a raw floppy disk image.  
+Back in the day, it worked. Now, when I created this repository, I tested it with a VirtualBox VM using the disk/CDARNQ.ISO image. While it runs, it does not capture keystrokes. 
 
 ---
 
@@ -63,7 +66,7 @@ Two utilities are provided:
 1. **`insarnq`:** Copies the 512 bytes from the `arranque.bin` file to the specified disk image file.  
 2. **`leernbp`:** Displays the boot sector information of a disk image file.  
 
-These utilities are standalone tools and must be compiled directly on your PC's system as target, because they are not part of the OS.  
+These utilities are standalone tools and must be compiled directly on your PC as the target system, as they are not part of the OS 
 
 ---
 
