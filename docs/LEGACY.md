@@ -1,9 +1,9 @@
 
-#	Sistema Operativo M 8086 (SOM8086)
+# Sistema Operativo M 8086 (SOM8086)
+
 Proyecto de creacion de un sistema operativo para el procesdador Intel 8086 que funcione desde un disquete 3/4 de 1440kb.
----
 *Última actualización enero de 2016*
----
+
 ## ESTADO
 
 	
