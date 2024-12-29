@@ -3,7 +3,7 @@
 
 This is a project I worked on during 2015/2016. The goal was to build a tiny operating system for the 8086 processor, which was used in early PCs (the x86 32-bit processor family began in 8086 mode). It is written in C and Assembly.  
 
-I made significant progress: I developed a bootstrap program to boot from a floppy disk that loaded the full binary into memory. Once laoded, the operating system runs command line user interface.
+I made significant progress: I developed a bootloader to boot from a floppy disk that loaded the full binary into memory. Once laoded, the operating system runs command line user interface.
 
 The project, however, did not reach the stage where the OS could load other programs or execute commands. Despite this, I find the repository very interesting and well-documented.  
 
@@ -56,8 +56,8 @@ Ensure these programs are added to the `%PATH%`.
 
 ---
 
-#### `arranque` (Bootstrap)  
-There is a `crear.bat` (*make*) script for the bootstrap routine. This routine is compiled into exactly 512 bytes and must be written directly to the boot sector of the disk image.  
+#### `arranque` (Bootloader)  
+There is a `crear.bat` (*make*) script to compile the bootloader. It is compiled into exactly 512 bytes and must be written directly to the boot sector of the disk image.  
 
 ---
 
@@ -74,6 +74,6 @@ These utilities are standalone tools and must be compiled directly on your PC as
 
 1. Create a 3.5" 1.44MB floppy disk image. I used [WinImage](http://www.winimage.com) by Gilles Vollant, but the website seems broken. Other similar tools may work.  
 2. Overwrite the boot sector with `arranque.bin` using the `insarnq` utility.  
-3. Copy `nucleo.bin` into the disk image. **It must be the first file on the disk** because the bootstrap routine blindly loads the first file.  
+3. Copy `nucleo.bin` into the disk image. **It must be the first file on the disk** because the bootloader blindly loads the first file.  
 4. Mount the disk image in a virtual machine.  
 5. Enjoy!  
