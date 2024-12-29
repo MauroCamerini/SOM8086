@@ -1,0 +1,12 @@
+FILE obj\inicio.obj 
+FILE obj\nucleo.obj 
+FILE obj\consola.obj 
+FILE obj\misc.obj 
+FILE obj\memloc.obj 
+FILE obj\opdisco.obj 
+FILE obj\fat.obj 
+FILE obj\bufsect.obj 
+NAME bin/nucleo.bin 
+FORMAT RAW BIN 
+OPTION NODEFAULTLIBS 
+OPTION START=inicio 

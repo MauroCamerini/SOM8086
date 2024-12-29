@@ -1,0 +1,1 @@
+nasm -o %~dp0arranque.bin %~dp0arranque.asm
