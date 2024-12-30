@@ -3,7 +3,7 @@
 
 This is a project I worked on during 2015/2016. The goal was to build a tiny operating system for the 8086 processor, which was used in early PCs (the x86 32-bit processor family began in 8086 mode). It is written in C and Assembly.  
 
-I made significant progress: I developed a bootstrap program to boot from a floppy disk that loaded the full binary into memory. Once laoded, the operating system runs command line user interface.
+I made significant progress: I developed a bootloader to boot from a floppy disk that loaded the full binary into memory. Once laoded, the operating system runs command line user interface.
 
 The project, however, did not reach the stage where the OS could load other programs or execute commands. Despite this, I find the repository very interesting and well-documented.  
 
